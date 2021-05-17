@@ -38,4 +38,4 @@ async def embed(ctx):
     )
     await ctx.send(embed = em)
 
-client.run('ODM4MTk0NDM4MTEwMzE0NDk2.YI3jZg.gBDttOc83QtYbKHwA1mlQBgC5KM')
+client.run(# Bot Token)
