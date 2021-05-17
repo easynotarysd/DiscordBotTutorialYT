@@ -1,5 +1,5 @@
 # DiscordBotTutorialYT
 
-##This is the code for my discord tutorial series on youtube.
+## This is the code for my discord tutorial series on youtube.
 
-##Enjoy!
+## Enjoy!
