@@ -4,7 +4,6 @@ from discord.ext import commands
 import os
 
 client = commands.Bot(command_prefix = "!")
-client.remove_command("help")
 
 @client.event
 async def on_ready():
@@ -14,17 +13,6 @@ async def on_ready():
 async def test(ctx):
     await ctx.send("Hi!")
 
-@client.command()
-async def help(ctx):
-    em = discord.Embed(title="help")
-    for cmd in client.walk_commands():
-        des = cmd.description
-        if not des or des == None or des == "":
-            des = "No description provided"
-        if cmd.signature is None:
-            cmd.signature = ""
-        em.add_field(name = f"`{cmd.name}{cmd.signature}`", value = des)
-    await ctx.send(embed = em)
 
 @client.command(description = "test")
 async def embed(ctx):
